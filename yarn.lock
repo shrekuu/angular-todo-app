@@ -136,6 +136,15 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/cdk@^13.0.1":
+  version "13.3.5"
+  resolved "https://registry.npmmirror.com/@angular/cdk/-/cdk-13.3.5.tgz#b198bcd062d46eb55e9e012cfab8b0a3457d2c23"
+  integrity sha512-fA99fGgybup9ezyB/IzOa9Mk8g8LjejkqikLnC3mAeQ0lROOO7Vf9Rp1v7/ahe2lALTUbA1bzJeXzQYaffkIiA==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~13.3.4":
   version "13.3.4"
   resolved "https://registry.npmmirror.com/@angular/cli/-/cli-13.3.4.tgz#c637875e064e0c9b9cea147265ea2dafa3557114"
@@ -225,6 +234,21 @@
   integrity sha512-3yUNyBpUi0KUKP91a3dVQsr9Jfjs4wGxpiFYb3apc7lKT5R1LJqt2O0EchjOgvFyJ6TDOemdCAzKgvSRkDxpMw==
   dependencies:
     tslib "^2.3.0"
+
+"@ant-design/colors@^5.0.0":
+  version "5.1.1"
+  resolved "https://registry.npmmirror.com/@ant-design/colors/-/colors-5.1.1.tgz#800b2186b1e27e66432e67d03ed96af3e21d8940"
+  integrity sha512-Txy4KpHrp3q4XZdfgOBqLl+lkQIc3tEvHXOimRN1giX1AEC7mGtyrO9p8iRGJ3FLuVMGa2gNEzQyghVymLttKQ==
+  dependencies:
+    "@ctrl/tinycolor" "^3.3.1"
+
+"@ant-design/icons-angular@^13.0.1":
+  version "13.1.0"
+  resolved "https://registry.npmmirror.com/@ant-design/icons-angular/-/icons-angular-13.1.0.tgz#6ff472ae880f911bf3a04f19b2f9b5ef5d096a90"
+  integrity sha512-bQ1pxiDmR8Hx7kUwQImxLGAtexv0uDCCMlKSWdyaw39TnNAPz+Hls0XL+UqVIjHgt/D4R8tkmSMpx3eBGFIY/Q==
+  dependencies:
+    "@ant-design/colors" "^5.0.0"
+    tslib "^2.0.0"
 
 "@assemblyscript/loader@^0.10.1":
   version "0.10.1"
@@ -1164,6 +1188,11 @@
   integrity sha512-ASA9W1aIy5ygskZYuWams4BzafD12ULvSypmaLJT2jvQ8G0M3I8PRQhC0h7mG0Z3LI05+agZjqSR9+K9yaQQjA==
   dependencies:
     postcss-value-parser "^4.2.0"
+
+"@ctrl/tinycolor@^3.3.1":
+  version "3.4.1"
+  resolved "https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.4.1.tgz#75b4c27948c81e88ccd3a8902047bcd797f38d32"
+  integrity sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw==
 
 "@discoveryjs/json-ext@0.5.6":
   version "0.5.6"
@@ -2446,6 +2475,11 @@ cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
+
+date-fns@^2.16.1:
+  version "2.28.0"
+  resolved "https://registry.npmmirror.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 debug@2.6.9:
   version "2.6.9"
@@ -4178,6 +4212,16 @@ neo-async@^2.6.2:
   resolved "https://registry.npmmirror.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+ng-zorro-antd@13.2.1:
+  version "13.2.1"
+  resolved "https://registry.npmmirror.com/ng-zorro-antd/-/ng-zorro-antd-13.2.1.tgz#c64b75490762c15dc18bf3e48956e3b50557990b"
+  integrity sha512-E4yIAie68a/lEVF8313FygJpcnAyZla3AJex6Tnf6geBKJ8z6h5psBgWL2U9IeKnnDGQPvtto2ckAZf0ZUvmaA==
+  dependencies:
+    "@angular/cdk" "^13.0.1"
+    "@ant-design/icons-angular" "^13.0.1"
+    date-fns "^2.16.1"
+    tslib "^2.3.0"
+
 nice-napi@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/nice-napi/-/nice-napi-1.0.2.tgz#dc0ab5a1eac20ce548802fc5686eaa6bc654927b"
@@ -4518,6 +4562,11 @@ parse5-sax-parser@^6.0.1:
   integrity sha512-kXX+5S81lgESA0LsDuGjAlBybImAChYRMT+/uKCEXFBFOeEhS52qUCydGhU3qLRD8D9DVjaUo821WK7DM4iCeg==
   dependencies:
     parse5 "^6.0.1"
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.npmmirror.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parse5@^6.0.1:
   version "6.0.1"
@@ -5740,7 +5789,7 @@ tslib@^1.9.0:
   resolved "https://registry.npmmirror.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0:
   version "2.4.0"
   resolved "https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
