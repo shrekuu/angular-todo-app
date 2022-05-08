@@ -1,4 +1,8 @@
-# AngularTodoApp
+# Angular Todo App
+
+[Demo](https://angular-todo-app.projects.linwise.com/)
+
+![screenshot](screenshot.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
