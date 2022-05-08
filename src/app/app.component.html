@@ -1,0 +1,57 @@
+<div class='page-container'>
+  <h2 class="page-title" nz-typography>{{title}}</h2>
+
+  <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixButton">
+    <input type="text" nz-input placeholder="What's on your mind?" [(ngModel)]="newTodo.content" (keydown.enter)="addTodo()"/>
+  </nz-input-group>
+  <ng-template #suffixButton>
+    <button nz-button nzType="primary" [disabled]="newTodo.content.trim() === ''" nzSearch
+      (click)="addTodo()">Add</button>
+  </ng-template>
+
+  <nz-list class="todo-list" nzBordered nzSize="large">
+    <nz-list-item *ngFor="let todo of todos; index as i" nzNoFlex>
+      <ul nz-list-item-actions>
+        <nz-list-item-action>
+          <a (click)="showTodoEditModal(i)"><i nz-icon nzType="edit" nzTheme="outline"></i></a>
+        </nz-list-item-action>
+        <nz-list-item-action>
+          <a (click)="removeTodo(i)"><i nz-icon nzType="delete" nzTheme="outline"></i></a>
+        </nz-list-item-action>
+      </ul>
+      <label nz-checkbox [(ngModel)]="todo.done" (ngModelChange)="updateStore()">
+        <del *ngIf="todo.done">
+          {{todo.content}}
+        </del>
+        <ng-container *ngIf="!todo.done">
+          {{todo.content}}
+        </ng-container>
+      </label>
+    </nz-list-item>
+    <nz-list-empty *ngIf="todos.length === 0"></nz-list-empty>
+  </nz-list>
+
+  <nz-modal [(nzVisible)]="isTodoEditModalVisible" nzTitle="The first Modal" (nzOnCancel)="handleTodoEditModalCancel()"
+    (nzOnOk)="handleTodoEditModalOk()">
+    <ng-container *nzModalContent>
+      <input type="text" nz-input placeholder="Empty and save to remove item." [(ngModel)]="editingTodo.content" />
+    </ng-container>
+  </nz-modal>
+
+  <nz-list>
+    <nz-list-item>
+      <div nz-space nzAlign="center" class="space-align-block">
+        <ng-container *nzSpaceItem><i nz-icon nzType="info-circle" nzTheme="outline"></i></ng-container>
+        <ng-container *nzSpaceItem>Contents are only saved in the browser.</ng-container>
+      </div>
+    </nz-list-item>
+    <nz-list-item>
+      <div nz-space nzAlign="center" class="space-align-block">
+        <ng-container *nzSpaceItem><i nz-icon nzType="github" nzTheme="outline"></i></ng-container>
+        <ng-container *nzSpaceItem><a target="_blank" href="https://github.com/shrekuu/angular-todo-app">Github Repo</a>
+        </ng-container>
+      </div>
+    </nz-list-item>
+  </nz-list>
+
+</div>
